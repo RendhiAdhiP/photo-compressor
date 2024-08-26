@@ -53,12 +53,12 @@ const App: React.FC = () => {
           <div className="flex flex-col gap-4">
             <input className="text-center p-4 border border-grey-300 rounded-xl" type="file" onChange={handleFileChange} accept="image/*" />
             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  px-2 rounded' onClick={handleCompressImage}>Compress Image</button>
-            {compressedFile && (
+            {/* {compressedFile && (
               <div>
                 <p>Original Size: {selectedFile.size / 1024} KB</p>
                 <p>Compressed Size: {compressedFile.size / 1024} KB</p>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
