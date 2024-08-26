@@ -4,7 +4,7 @@ import imageCompression from 'browser-image-compression';
 
 const App: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [compressedFile, setCompressedFile] = useState<File | null>(null);
+  // const [compressedFile, setCompressedFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@ const App: React.FC = () => {
 
     try {
       const compressedImage = await imageCompression(selectedFile, options);
-      setCompressedFile(compressedImage);
+      // setCompressedFile(compressedImage);
 
       // Untuk mengunduh gambar yang telah dikompres
       const downloadLink = URL.createObjectURL(compressedImage);
